@@ -18,6 +18,15 @@
         <li><a href="{{ route('cause.index') }}">Causas</a></li>
         <li><a href="{{ route('institution.index') }}">Instituições</a></li>
       </ul>
+      <ul>
+        <li>
+            @if(Auth::check())
+              <p class="navbar-text">Bem vindo {{Auth::user()->name}}-<a href="{{url('/auth/logout')}}">Logoff</a></p>
+            @else
+              <p><a href="{{url('/auth/login')}}">Efetuar Login</a></p>
+            @endif
+        </li>
+      </ul>
     </div><!--/.nav-collapse -->
   </div>
 </nav>

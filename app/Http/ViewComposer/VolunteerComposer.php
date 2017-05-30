@@ -20,4 +20,5 @@ class VolunteerComposer {
 		$view->with('institutions', $this->institutions->lists('name', 'id'));
 		$view->with('causes', $this->causes->lists('cause', 'id'));
 	}
+	
 }

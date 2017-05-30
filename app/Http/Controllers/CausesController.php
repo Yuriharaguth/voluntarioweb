@@ -12,6 +12,10 @@ use App\Cause;
 
 class CausesController extends Controller
 {
+    public function __construct(){
+        $this->middleware('auth');
+    }
+
     public function index() {
         $causes = Cause::paginate(10);
         return view('causes.index', compact('causes'));
