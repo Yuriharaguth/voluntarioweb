@@ -1,6 +1,6 @@
 # Laravel 5.1.11
 
-Esse curso tem como objetivo praticar o conhecimento do framework Laravel.
+Esse projeto tem como objetivo praticar o conhecimento do framework Laravel.
 
 ## Instruções para instalação
 
