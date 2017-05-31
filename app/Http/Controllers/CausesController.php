@@ -39,6 +39,10 @@ class CausesController extends Controller
     }
 
     public function update(CauseRequest $request, Cause $cause) {
+        if(\Gate::denies('update-cause', $cause)){
+            dd("you vsf");
+        }
+
         $cause->update($request->all());
         $cause->save();
         return redirect()->route('cause.index');
