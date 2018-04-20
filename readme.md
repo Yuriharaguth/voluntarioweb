@@ -2,6 +2,10 @@
 
 Esse projeto tem como objetivo praticar o conhecimento do framework Laravel.
 
+São necessarios os seguintes itens:
+- PHP 5.5.9 ou superior
+- Composer (Gerenciador de dependências)
+
 ## Instruções para instalação
 
 Após clonar o projeto
