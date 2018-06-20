@@ -16,3 +16,4 @@ Para utilizar o projeto siga os passos abaixo:
  - Execute no terminal o comando `composer install` para instalar as dependencias
  - Em seguida executa `composer project-clear` para limpar o cache da aplicação, das configs e as views compiladas
  - Execute o `php artisan migrate` e depois `php artisan db:seed` para popular o banco de dados com as informações minimas para o funcionamento do projeto.
+ php artisan key:generate 
